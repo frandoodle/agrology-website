@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+
+
+  {%- include head.html -%}
+
+  {% include slider_styles.html %}
+
+  <body>
+
+    <!--{%- include header-contact.html -%}-->
+
+    {%- include header.html -%}
+
+    {% include slider.html selector="example_slider" stopOnBlur="false" %}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+    {% include slider_scripts.html %}
+
+
+  </body>
+
+</html>

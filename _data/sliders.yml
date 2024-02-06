@@ -1,0 +1,19 @@
+# example slider
+- selector: example_slider
+  captions: true
+  stopOnBlur: false
+  images:
+    - src: assets/test1.jpg
+      alt: Agrology
+      href: https://github.com/jekylltools/jekyll-ideal-image-slider-include
+    - src: assets/test2.jpeg
+      alt: image two
+      href: https://github.com/jekylltools/jekyll-ideal-image-slider-include
+    - src: assets/test3.jpeg
+      alt: image three
+      href: https://github.com/jekylltools/jekyll-ideal-image-slider-include
+  settings:
+    height: "350"
+    effect: "'fade'"
+    interval: "7000"
+    transitionDuration: '700'
