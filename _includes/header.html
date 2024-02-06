@@ -4,7 +4,11 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}"> <img src="assets/logoname.png" height="100px"></a>
+    <div class="contact_info_header">
+      {{ site.header_phone }}
 
+      <a class="u-email" href="mailto:{{ site.header_email | encode_email }}">{{ site.header_email }}</a>
+    </div>
     {%- if page_paths -%}
       <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
