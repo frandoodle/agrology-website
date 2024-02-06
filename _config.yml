@@ -20,9 +20,20 @@
 
 title: Your awesome title
 author: Francis
-address: Duncan, BC
-email: your-email@example.com
-phone: (111) 111-1111
+
+
+vancouver_address: Vancouver, BC
+vancouver_email: your-email@example.com
+vancouver_phone: (111) 111-1111
+
+duncan_address: Duncan, BC
+duncan_email: your-email@example.com
+duncan_phone: (111) 111-1111
+
+creston_address: Creston, BC
+creston_email: your-email@example.com
+creston_phone: (111) 111-1111
+
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -32,10 +43,12 @@ url: "https://frandoodle.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-email-protect
 
 # Exclude from processing.
 # The following items will not be processed, by default.

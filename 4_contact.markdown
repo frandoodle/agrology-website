@@ -4,12 +4,27 @@ title: Contact
 permalink: /contact/
 ---
 
-![image-title-here](/assets/test.jpeg){:class="img-responsive"}{:width="400px"}{:style="float: right; margin: 0 0 0 0"}
+  Have any questions? Please don't hesitate to send us a message. We will reply in 1 to 2 business days.
 
-{{ site.author }}
+<div>
 
-{{ site.address }}
+<iframe width="50%" height="300px" align="right" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/en/map/untitled-map_1020009?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&captionMenus=false&fullscreenControl=false&locateControl=false&measureControl=false&editinosmControl=false&starControl=false"></iframe>
 
-Email: <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+<h2>Locations</h2>
 
-Phone: {{ site.phone }}
+<h3> Vancouver</h3>
+{{ site.vancouver_address }}
+<br>
+Email: <a class="u-email" href="mailto:{{ site.vancouver_email | encode_email }}">{{ site.vancouver_email }}</a>
+<br>
+Phone: {{ site.vancouver_phone }}
+
+
+<h3> Creston</h3>
+{{ site.creston_address }}
+<br>
+Email: <a class="u-email" href="mailto:{{ site.creston_email | encode_email }}">{{ site.creston_email }}</a>
+<br>
+Phone: {{ site.creston_phone }}
+
+</div>

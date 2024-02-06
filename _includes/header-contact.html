@@ -4,7 +4,7 @@
     
     {{ site.phone }}
 
-    <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+    <a class="u-email" href="mailto:{{ site.vancouver_email | encode_email }}">{{ site.vancouver_email }}</a>
 
   </div>
 </header>

@@ -34,3 +34,9 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem "webrick"
 gem "faraday-retry"
+
+#email encoding
+gem 'jekyll-email-protect'
+
+# # google maps
+# gem 'jekyll-maps'
