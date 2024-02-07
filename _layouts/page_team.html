@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article class="post">
+  
+  <div class="grid">
+    <div class="col1-2">
+      {% contentblock sidebar %}
+    </div>
+    
+    <div class="col1-2">
+      
+      <header class="post-header">
+        <h1 class="post-title">{{ page.title | escape }}</h1>
+      </header>
+      
+      <div class="post-content">
+        {{ content }}
+      </div>
+    </div>
+    
+    
+    
+  </div>
+  
+</article>
