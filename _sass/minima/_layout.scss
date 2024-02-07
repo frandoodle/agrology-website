@@ -67,6 +67,27 @@
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 20px;
+
+    }
+
+    
+  }
+  a.highlighted {
+    border:1px solid black;
+    border-radius: 50px;
+    padding:5px 15px;
+    color:white;
+    background-color: black;
+
+    -webkit-transition: 0.1s ease;
+    -moz-transition: 0.1s ease;
+    -o-transition: 0.1s ease;
+
+    &:hover{
+      background-color: white;
+      color:$text-color
+
+
     }
   }
 

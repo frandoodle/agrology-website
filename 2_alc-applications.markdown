@@ -1,6 +1,6 @@
 ---
 layout: page_services
-menu: not-hidden
+menu: highlighted
 menuservices: services
 title: ALC Applications
 order: 99
