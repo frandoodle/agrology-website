@@ -48,7 +48,7 @@
 .site-nav {
   float: right;
   position: absolute;
-  bottom:5px;
+  bottom:0px;
   right:5px;
   // right:30px;
   line-height: $base-line-height * $base-font-size * 2.25;
@@ -211,8 +211,17 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
+  // padding: $spacing-unit 0;
+  padding: 0;
   flex: 1;
+}
+
+.breadcrumb-wrapper {
+  padding: $spacing-unit/2 0;
+  margin-bottom: $spacing-unit;
+  background-color: #eee;
+  box-shadow: 0 0 0 100vmax #eee;
+  clip-path: inset(0 -100vmax); 
 }
 
 .page-heading {

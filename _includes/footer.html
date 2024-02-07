@@ -15,11 +15,11 @@
           
 
             {%- if site.vancouver_email -%}
-            <li><a class="u-email" href="mailto:{{ site.vancouver_email | encode_email }}">{{ site.vancouver_email }}</a></li>
+            <li><a class="u-email" href="mailto: {{ site.vancouver_email | encode_email }}">{{ site.vancouver_email }}</a></li>
             {%- endif -%}
             
             {%- if site.vancouver_phone -%}
-            {{ site.vancouver_phone }}
+            <a class="u-phone" href="tel: {{ site.vancouver_phone }}">{{ site.vancouver_phone }}</a>
             {%- endif -%}
         </ul>
       </div>
@@ -35,7 +35,7 @@
       
 
         {%- if site.duncan_email -%}
-        <li><a class="u-email" href="mailto:{{ site.duncan_email | encode_email }}">{{ site.duncan_email }}</a></li>
+        <li><a class="u-email" href="mailto: {{ site.duncan_email | encode_email }}">{{ site.duncan_email }}</a></li>
         {%- endif -%}
         
         {%- if site.duncan_phone -%}
@@ -57,17 +57,17 @@
       
 
         {%- if site.creston_email -%}
-        <li><a class="u-email" href="mailto:{{ site.creston_email | encode_email }}">{{ site.creston_email }}</a></li>
+        <li><a class="u-email" href="mailto: {{ site.creston_email | encode_email }}">{{ site.creston_email }}</a></li>
         {%- endif -%}
         
         {%- if site.creston_phone -%}
-        {{ site.creston_phone }}
+        <a class="u-phone" href="tel: {{ site.creston_phone }}">{{ site.creston_phone }}</a>
         {%- endif -%}
         </ul>
       </div>
 
       <div class="footer-col footer-col">
-        <a class="site-logo" rel="author" href="{{ "/" | relative_url }}"> <img src="assets/logo.png" height="100px"></a>
+        <a class="site-logo" rel="author" href="{{ '/'' | relative_url }}"> <img src="{{ site.baseurl }}{% link assets/logo.png %}" height="100px"></a>
       </div>
 
 

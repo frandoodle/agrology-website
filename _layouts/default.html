@@ -3,14 +3,20 @@
 
   {%- include head.html -%}
 
+  
+
   <body>
 
     <!-- {%- include header-contact.html -%} -->
 
     {%- include header.html -%}
 
+    
+
     <main class="page-content" aria-label="Content">
+      
       <div class="wrapper">
+        <div class="breadcrumb-wrapper">{% include breadcrumbs.html %}</div>
         {{ content }}
       </div>
     </main>

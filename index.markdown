@@ -8,13 +8,18 @@ image_sliders:
   - example_slider
 ---
 
-Todo:
-- Logo
-- Add images to top and bottom header backgrounds
-- correct images
-- possibly slideshow for services images
-- better homepage
-- add two column view to about
-- add real contact info with protection against scraping
+No problem is too big, or too small.
 
 # Services We Offer
+
+Professional Agrologist Reports
+
+Farm Plans
+
+Nutrient Management Plans (NMP)
+
+Land Use Capability for Agriculture (LCA) Reports
+
+Non-Farm Use (NFU) Applications
+
+Soil and Fill-Related Applications

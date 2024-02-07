@@ -1,10 +1,11 @@
 ---
-layout: page_nofooter
+layout: page
 title: Contact
+order: 4
 permalink: /contact/
 ---
 
-  Have any questions? Please don't hesitate to send us a message. We will reply in 1 to 2 business days.
+  Have any questions? Please don't hesitate to send us a message. We'll reply in 1 to 2 business days.
 
 <div>
 
