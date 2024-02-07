@@ -70,6 +70,7 @@
     }
   }
 
+
   @include media-query($on-palm) {
     position: absolute;
     top: 9px;
@@ -217,11 +218,12 @@
 }
 
 .breadcrumb-wrapper {
-  padding: $spacing-unit/2 0;
+  padding: $spacing-unit/3 0;
   margin-bottom: $spacing-unit;
-  background-color: #eee;
-  box-shadow: 0 0 0 100vmax #eee;
-  clip-path: inset(0 -100vmax); 
+  // background-color: $grey-color-light;
+  // border-top:1px $grey-color-light solid;
+  border-bottom:1px $grey-color-light solid;
+  font-weight: bold;
 }
 
 .page-heading {
