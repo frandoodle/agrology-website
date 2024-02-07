@@ -150,6 +150,13 @@ a.current-link-services,
   color: $text-color
 }
 
+/**
+ * quotes
+ */
+p.quote {
+  text-align: center;
+  font-size: $base-font-size*1.250;
+}
 
 /**
  * Blockquotes
@@ -256,7 +263,31 @@ pre {
   margin-left: 20px;
 }
 
+/**
+* Services tagline
+**/
+p.services-tagline {
+  font-size: $base-font-size*1.30;
+}
 
+/**
+* Team portraits
+**/
+div.team-portraits {
+  margin-top:$spacing-unit;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+
+img {
+  background-color: grey;
+}
+
+.caption {
+  display: block;
+}
+}
 
 /**
  * Clearfix

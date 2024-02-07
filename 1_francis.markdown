@@ -1,6 +1,7 @@
 ---
 layout: page_team
 menu: hidden
+jobtitle: M.Sc., A.Ag.
 title: Francis Durnin-Vermette
 permalink: /about/francis-durnin-vermette
 ---
@@ -8,17 +9,13 @@ permalink: /about/francis-durnin-vermette
 {% contentfor sidebar %}
 ![Francis Durnin-Vermette](/assets/francis.jpg){:class="img-responsive"}{:height="230px"}{:style="float: left; margin: 0 20px 20px 0"}
 
-LinkedIn
+<!-- LinkedIn -->
 
-C.V.
+<!-- C.V. -->
 
-List of my publications
+<!-- List of my publications -->
 
 {% endcontentfor %}
-
-Soil Scientist,
-
-M.Sc., A.Ag.
 
 Francis is an agrologist with over 8 years of soil science experience in Canada. His broad technical expertise includes soil classification, bioterrain typing, land capability assessment, soil carbon modelling, and more.
 

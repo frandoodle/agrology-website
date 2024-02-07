@@ -9,7 +9,7 @@ permalink: /contact/
 
 <div>
 
-<iframe width="50%" height="300px" align="right" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/en/map/untitled-map_1020009?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&captionMenus=false&fullscreenControl=false&locateControl=false&measureControl=false&editinosmControl=false&starControl=false"></iframe>
+<iframe width="60%" height="300px" align="right" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/en/map/untitled-map_1020009?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&captionMenus=false&fullscreenControl=false&locateControl=false&measureControl=false&editinosmControl=false&starControl=false"></iframe>
 
 <h2>Locations</h2>
 
