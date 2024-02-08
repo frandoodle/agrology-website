@@ -2,8 +2,15 @@
 layout: page_services
 menu: hidden
 menuservices: services
-title: Soil and Fill-Related Applications
-permalink: /services/soil-and-fill-related-applications/
+title: Soil and Fill Applications
+permalink: /services/soil-and-fill-applications/
 ---
 
-Something something
+Do you need to move soil or fill on to or off from land in the Agricultural Land Reserve (ALR)? If so, you have two options:
+
+1. For smaller projects, you can expedite the process with a Notice of Intent (NOI) application, which is considered directly by the Agricultural Land Commission (ALC), and therefore circumvents your minicipal government. 
+2. For larger projects, you must submit a Soil and Fill Use (SFU) application, which is first considered by your municipal government, and then by the Commission.
+
+If you have any questions, or want to know which process is suitable for your project, please don't hesitate to reach out.
+
+![Soil Fill Use vs Notice of Intent Applications](/assets/sfu_vs_noi.png){:class="img-responsive"}{:style="margin: 0"}

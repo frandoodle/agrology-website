@@ -16,16 +16,16 @@ permalink: /contact/
 <h3> Vancouver</h3>
 {{ site.vancouver_address }}
 <br>
-Email: <a class="u-email" href="mailto:{{ site.vancouver_email | encode_email }}">{{ site.vancouver_email }}</a>
+Email: <a class="u-email" href="mailto: {{ site.vancouver_email | encode_email }}">{{ site.vancouver_email }}</a>
 <br>
-Phone: {{ site.vancouver_phone }}
+Phone: <a class="u-phone" href="tel: {{ site.vancouver_phone }}">{{ site.vancouver_phone }}</a>
 
 
 <h3> Creston</h3>
 {{ site.creston_address }}
 <br>
-Email: <a class="u-email" href="mailto:{{ site.creston_email | encode_email }}">{{ site.creston_email }}</a>
+Email: <a class="u-email" href="mailto: {{ site.creston_email | encode_email }}">{{ site.creston_email }}</a>
 <br>
-Phone: {{ site.creston_phone }}
+Phone: <a class="u-phone" href="tel: {{ site.creston_phone }}">{{ site.creston_phone }}</a>
 
 </div>

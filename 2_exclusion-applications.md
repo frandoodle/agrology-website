@@ -6,4 +6,8 @@ title: ALR Exclusion Applications
 permalink: /services/alr-exclusion-applications/
 ---
 
-Something something
+Do you have land that you believe does not belong in the Agricultural Land Reserve (ALR)?
+
+Assisi Agrology can help you decide whether an exclusion application would be suitable, work on all reporting requirements, suggest application strategies by analyzing past exclusion decisions in your region, and streamline the application process by engaging in direct communication with municipal governments and Agricultural Land Commission (ALC) representatives.
+
+Note: due to Bill 15-2019, in effect since September 30, 2020, private landowners can no longer apply to the ALC for exclusion from the ALR. Only the Provincial Government, local or First Nation governments, or prescribed public bodies are authorized to submit such applications. Therefore, landowners looking to submit an ALR exclusion application should engage their municipal government to initiate the process.

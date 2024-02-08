@@ -108,16 +108,24 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $text-color;
-  text-decoration: none;
+  color: $brand-color;
+  // text-decoration: none;
+          text-decoration: underline solid transparent;
+  // -webkit-text-decoration: underline solid transparent;
+  transition:         text-decoration 0.1s ease;
+  // transition: -webkit-text-decoration 0.15s ease;
+
 
   &:visited {
-    color: darken($text-color, 15%);
+    color: darken($brand-color, 10%);
   }
 
   &:hover {
-    color: $text-color;
-    text-decoration: underline;
+    color: $brand-color;
+    // text-decoration: underline;
+            text-decoration: underline solid Currentcolor;
+    // -webkit-text-decoration: underline solid Currentcolor;
+
   }
 
   .social-media-list &:hover {
@@ -129,13 +137,6 @@ a {
   }
 
   
-}
-a.brand {
-  color: $brand-color;
-}
-
-a.brand:hover {
-  color: $brand-color;
 }
 
 

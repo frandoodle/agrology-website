@@ -10,4 +10,6 @@ image_sliders:
 
 <p class="quote">Assisi Agrology is a BC-based environmental consulting firm serving small- to mid-sized property owners who face municipal or provincial environmental regulatory challenges.</p>
 
+<p class="quote">&#8226;</p>
+
 <p class="quote">There is no problem is too big, or too small.</p>
