@@ -9,4 +9,4 @@ image_sliders: [small_slider]
 image_slider_selector: "small_slider"
 ---
 
-Has your municipal government requested that you retain an environmental consultant or professional agrologist to draft a report? No matter what your particular situation requires, Assisi Agrology has the technical and regulatory expertise to draft professional reporting, and streamline the permitting processes.
+Has your local government requested that you retain an environmental consultant or professional agrologist to prepare a report? No matter what your situation requires, Assisi Agrology has the technical and regulatory expertise to draft professional reports and streamline the permitting processes.
