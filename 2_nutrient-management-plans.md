@@ -4,6 +4,9 @@ menu: hidden
 menuservices: services
 title: Nutrient Management Plans
 permalink: /services/nutrient-management-plans/
+
+image_sliders: [small_slider]
+image_slider_selector: "small_slider"
 ---
 In British Columbia, NMP requirements are being gradually rolled out for farms based on factors such as location, operation type, and soil test values.
 Nutrient Management Plans (NMPs) aid farmers in optimizing production and environmental protection. These plans offer tailored recommendations, advising farmers on appropriate nutrient sources and application rates.

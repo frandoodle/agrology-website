@@ -4,6 +4,9 @@ menu: hidden
 menuservices: services
 title: ALR Exclusion Applications
 permalink: /services/alr-exclusion-applications/
+
+image_sliders: [small_slider]
+image_slider_selector: "small_slider"
 ---
 
 Do you have land that you believe does not belong in the Agricultural Land Reserve (ALR)?

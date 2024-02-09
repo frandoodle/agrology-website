@@ -4,6 +4,9 @@ menu: hidden
 jobtitle: M.Sc., A.Ag.
 title: Francis Durnin-Vermette
 permalink: /about/francis-durnin-vermette
+
+image_sliders: [small_slider]
+image_slider_selector: "small_slider"
 ---
 
 {% contentfor sidebar %}

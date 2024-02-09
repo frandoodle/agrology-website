@@ -3,6 +3,9 @@ layout: page
 title: About
 order: 1
 permalink: /about/
+
+image_sliders: [small_slider]
+image_slider_selector: "small_slider"
 ---
 <!-- 
 ## Who We Are

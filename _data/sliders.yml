@@ -1,19 +1,34 @@
-# example slider
-- selector: example_slider
+- selector: homepage_slider
   captions: true
   stopOnBlur: false
   images:
-    - src: assets/test1.jpg
-      alt: Agrology
-      href: https://github.com/jekylltools/jekyll-ideal-image-slider-include
-    - src: assets/test2.jpeg
-      alt: image two
-      href: https://github.com/jekylltools/jekyll-ideal-image-slider-include
-    - src: assets/test3.jpeg
-      alt: image three
-      href: https://github.com/jekylltools/jekyll-ideal-image-slider-include
+    - src: assets/idaho.jpg
+      alt: Professional Agrologist Reporting
+      href: services/professional-agrologist-reports/
+    - src: assets/arizona.jpg
+      alt: Soil and Fill Applications
+      href: services/soil-and-fill-applications/
+    - src: assets/pennsylvania.jpg
+      alt: Land Capability for Agriculture
+      href: services/land-capability-for-agriculture-reports/
   settings:
     height: "350"
     effect: "'fade'"
     interval: "7000"
     transitionDuration: '700'
+
+- selector: small_slider
+  stopOnBlur: false
+  images:
+    - src: assets/alfonse-transformed-slice.jpg
+    - src: assets/alps-transformed-slice.jpg
+    # - src: assets/test1-slice.jpg
+    - src: assets/tyrol2-transformed-slice.jpg
+    
+  settings:
+    height: "100"
+    effect: "'fade'"
+    interval: "14000"
+    transitionDuration: '2000'
+    disableNav: true
+    keyboardNav: false

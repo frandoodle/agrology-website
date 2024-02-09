@@ -5,6 +5,9 @@ menuservices: services
 title: ALC Application Packages
 order: 99
 permalink: /services/alc-application-packages/
+
+image_sliders: [small_slider]
+image_slider_selector: "small_slider"
 ---
 
 Do you need to submit an application to the Agricultural Land Commission (ALC)? Assisi Agrology can help you ensure your application package is high-quality and conforms to the ALC's expectations, maximizing your chances of approval. 

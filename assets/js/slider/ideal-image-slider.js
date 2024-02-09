@@ -647,6 +647,10 @@ var IdealImageSlider = (function() {
 		this._attributes.timerId = setInterval(this.nextSlide.bind(this), this.settings.interval);
 		this.settings.onStart.apply(this);
 
+		_addClass(this._attributes.previousSlide, "not-invisible");
+		_addClass(this._attributes.currentSlide, "not-invisible");
+		_addClass(this._attributes.nextSlide, "not-invisible");
+
 		// Stop if window blur
 		if (this.settings.stopOnBlur) {
 			window.onblur = function() {

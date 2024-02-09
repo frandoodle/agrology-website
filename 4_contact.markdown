@@ -3,6 +3,9 @@ layout: page
 title: Contact
 order: 4
 permalink: /contact/
+
+image_sliders: [small_slider]
+image_slider_selector: "small_slider"
 ---
 
   Have any questions? Please don't hesitate to send us a message. We'll reply in 1 to 2 business days.

@@ -4,6 +4,9 @@ menu: hidden
 menuservices: services
 title: Soil and Fill Applications
 permalink: /services/soil-and-fill-applications/
+
+image_sliders: [small_slider]
+image_slider_selector: "small_slider"
 ---
 
 Do you need to move soil or fill on to or off from land in the Agricultural Land Reserve (ALR)? If so, you have two options:

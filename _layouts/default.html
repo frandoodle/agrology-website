@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {%- include head.html -%}
+{%- include head.html -%}
 
+
+
+<body>
   
+  <!-- {%- include header-contact.html -%} -->
+  
+  {%- include header.html -%}
+  
+  {% include slider_styles.html %}
+  
+  {%- if page.image_slider_selector != nil -%}
 
-  <body>
+  {% include slider.html selector= page.image_slider_selector stopOnBlur="false" %}
 
-    <!-- {%- include header-contact.html -%} -->
-
-    {%- include header.html -%}
-
-    
-
-    <main class="page-content" aria-label="Content">
+  {%- endif -%}
+  
+  <main class="page-content" aria-label="Content">
+    <div class="breadcrumb-wrapper">{% include breadcrumbs.html %}</div>
+    <div class="wrapper">
       
-      <div class="breadcrumb-wrapper">{% include breadcrumbs.html %}</div>
-      <div class="wrapper">
-        
-        {{ content }}
-      </div>
-    </main>
-
-    {%- include footer.html -%}
-
-  </body>
+      {{ content }}
+    </div>
+  </main>
+  
+  {%- include footer.html -%}
+  
+  {% include slider_scripts.html %}
+  
+  
+</body>
 
 </html>

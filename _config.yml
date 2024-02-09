@@ -37,6 +37,9 @@ creston_phone: (111) 111-1111
 header_email: your-email@example.com
 header_phone: (111) 111-1111
 
+default_image_sliders: [bigsby]
+default_image_slider_selector: "bigsby"
+
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for

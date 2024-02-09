@@ -13,7 +13,8 @@
 	overflow: hidden;
 }
 .iis-slide {
-	display: block;
+	display:none;
+	visibility:hidden;
 	bottom: 0;
 	text-decoration: none;
 	position: absolute;
@@ -25,6 +26,10 @@
 	background-position: 50% 50%;
 	background-size: cover;
 	text-indent: -9999px;
+}
+.not-invisible {
+	display: block;
+	visibility: visible;
 }
 
 /* Slide effect */

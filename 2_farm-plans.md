@@ -4,6 +4,9 @@ menu: hidden
 menuservices: services
 title: Farm Plans
 permalink: /services/farm-plans/
+
+image_sliders: [small_slider]
+image_slider_selector: "small_slider"
 ---
 
 Farm plans are required by many municipal governments to demonstrate the capacity for achieving farm status. Assisi Agrology is well-versed in drafting farm plans for the City of Richmond and other municipalities.

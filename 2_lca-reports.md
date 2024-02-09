@@ -4,6 +4,9 @@ menu: hidden
 menuservices: services
 title: Land Capability for Agriculture Reports
 permalink: /services/land-capability-for-agriculture-reports/
+
+image_sliders: [small_slider]
+image_slider_selector: "small_slider"
 ---
 
 Have you been asked to submit a Land Capability for Agriculture (LCA) report? LCA classifications are used to describe the soil's limitations for agricultural use, and LCA assessments are frequently used to demonstrate the soil's suitability for its intended use. 
