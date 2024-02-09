@@ -6,7 +6,7 @@ title: Land Capability for Agriculture Reports
 permalink: /services/land-capability-for-agriculture-reports/
 ---
 
-Have you been asked to submit a Land Capability for Agriculture (LCA) report? LCA classification is based on the soil's limitations for agricultural use. 
+Have you been asked to submit a Land Capability for Agriculture (LCA) report? LCA classifications are used to describe the soil's limitations for agricultural use, and LCA assessments are frequently used to demonstrate the soil's suitability for its intended use. 
 
 Assisi Agrology is highly experienced in conducting LCA assessments. First, we perform a field assessment on the land in question, including testing of drainage, soil texture, fertility, stoniness, etc. That data is then used to complete the report.
 

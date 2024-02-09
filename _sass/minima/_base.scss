@@ -154,9 +154,24 @@ a.current-link-services,
 /**
  * quotes
  */
-p.quote {
+.quote {
   text-align: center;
   font-size: $base-font-size*1.250;
+
+  position: relative;
+  font-style: italic;
+  &:before {
+      content: '\201C';
+      font-family: Georgia, serif;
+      position: relative;
+      line-height: 0px;
+      top: .5em;
+      left: -0.05em;
+      color: darken(white, 7%);
+      font-size: 6em;
+      z-index: -1;
+   }
+
 }
 
 /**

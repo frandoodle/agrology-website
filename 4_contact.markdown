@@ -13,12 +13,12 @@ permalink: /contact/
 
 <h2>Locations</h2>
 
-<h3> Vancouver</h3>
-{{ site.vancouver_address }}
+<h3> Richmond</h3>
+{{ site.richmond_address }}
 <br>
-Email: <a class="u-email" href="mailto: {{ site.vancouver_email | encode_email }}">{{ site.vancouver_email }}</a>
+Email: <a class="u-email" href="mailto: {{ site.richmond_email | encode_email }}">{{ site.richmond_email }}</a>
 <br>
-Phone: <a class="u-phone" href="tel: {{ site.vancouver_phone }}">{{ site.vancouver_phone }}</a>
+Phone: <a class="u-phone" href="tel: {{ site.richmond_phone }}">{{ site.richmond_phone }}</a>
 
 
 <h3> Creston</h3>
