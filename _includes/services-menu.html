@@ -9,9 +9,9 @@
     {%- if my_page.title -%}
 
     {%- if my_page.title == page.title -%}
-    <li><span class="page-link-services current-link-services">{{ my_page.title | escape }}</span></li>
+    <span class="page-link-services current-link-services"><li>{{ my_page.title | escape }}</li></span>
     {%- else -%}
-    <li><a class="page-link-services" href="{{ my_page.url | relative_url }}"> > {{ my_page.title | escape }}</a></li>
+    <a class="page-link-services" href="{{ my_page.url | relative_url }}"><li> > {{ my_page.title | escape }}</li></a>
     {%- endif -%}
     {%- endif -%}
 
