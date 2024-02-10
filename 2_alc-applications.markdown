@@ -1,8 +1,10 @@
 ---
+title: ALC Application Packages
+# description: 
+
 layout: page_services
 menu: highlighted
 menuservices: services
-title: ALC Application Packages
 order: 99
 permalink: /services/alc-application-packages/
 

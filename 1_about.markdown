@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+description: Assisi Agrology was founded by Francis Durnin-Vermette to serve small- to mid-sized property owners facing environmental bylaw challenges in BC.
 order: 1
 permalink: /about/
 

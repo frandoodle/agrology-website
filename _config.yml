@@ -18,8 +18,52 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-author: Francis
+title: Assisi Agrology
+author: Francis Durnin-Vermette
+tagline: "Professional Agrologists in BC"
+description: >- # this means to ignore newlines until "baseurl:"
+  We provide professional agrologist services
+  to property owners in British Columbia,
+  including ALC applications, soil and fill reports, and farm plans.
+logo: "/assets/logo.png"
+
+webmaster_verifications:
+  google: 1234
+  bing: 1234
+  alexa: 1234
+  yandex: 1234
+  baidu: 1234
+  facebook: 1234
+
+# twitter:
+#   username: benbalter
+#   card: summary
+# facebook:
+#   app_id: 1234
+#   publisher: 1234
+#   admins: 1234
+# social:
+#   name: Ben Balter
+#   links:
+#     - https://twitter.com/BenBalter
+#     - https://www.facebook.com/ben.balter
+#     - https://www.linkedin.com/in/BenBalter
+#     - https://github.com/benbalter
+#     - https://keybase.io/benbalter
+
+timezone: America/Vancouver
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/logoname.png
+      seo_description_max_words: 200
+      last_modified_at: 2024-02-09
+
+baseurl: "/personal-website" # the subpath of your site, e.g. /blog
+url: "https://frandoodle.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: jekyllrb
+# github_username:  jekyll
 
 
 richmond_address: Richmond, BC
@@ -37,24 +81,15 @@ creston_phone: (111) 111-1111
 header_email: your-email@example.com
 header_phone: (111) 111-1111
 
-default_image_sliders: [bigsby]
-default_image_slider_selector: "bigsby"
-
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/personal-website" # the subpath of your site, e.g. /blog
-url: "https://frandoodle.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-
 
 # Build settings
 theme: minima
 plugins:
-  - jekyll-feed
+  # - jekyll-feed
   - jekyll-email-protect
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
 
 
 # Exclude from processing.
