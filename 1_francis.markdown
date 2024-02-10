@@ -4,7 +4,8 @@ title: Francis Durnin-Vermette
 
 layout: page_team
 menu: hidden
-jobtitle: M.Sc., A.Ag.
+jobtitle: M.Sc.
+# jobtitle: M.Sc., A.Ag.
 
 permalink: /about/francis-durnin-vermette/
 teammember_sidebar_html: francis.html

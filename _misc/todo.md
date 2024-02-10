@@ -1,4 +1,4 @@
-Find list of keywords
+<!-- Find list of keywords
 on-page SEO
     short and descriptive url slugs
     meta description
@@ -10,6 +10,11 @@ on-page SEO
     use a large enough text
     conversational tone (at or below 6th grade level)
     open graph meta tags
-    schema markup
+    schema markup -->
 Google Search Console - https://www.quicksprout.com/google-search-console-guide/
 screaming frog
+replace emails with just info@assisi.ca
+google business
+google lighthouse
+Get github pages to use assisi.ca
+google voice for phone numbers
