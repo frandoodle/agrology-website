@@ -15,7 +15,7 @@
           
 
             {%- if site.richmond_email -%}
-            <li><a class="u-email" href="mailto: {{ site.richmond_email | encode_email }}">{{ site.richmond_email }}</a></li>
+            <li><a class="u-email" href="mailto: {{ site.richmond_email | encode_email }}">{{ site.richmond_email | html_encode_email }}</a></li>
             {%- endif -%}
             
             {%- if site.richmond_phone -%}
@@ -35,7 +35,7 @@
       
 
         {%- if site.duncan_email -%}
-        <li><a class="u-email" href="mailto: {{ site.duncan_email | encode_email }}">{{ site.duncan_email }}</a></li>
+        <li><a class="u-email" href="mailto: {{ site.duncan_email | encode_email }}">{{ site.duncan_email | html_encode_email }}</a></li>
         {%- endif -%}
         
         {%- if site.duncan_phone -%}
@@ -57,7 +57,7 @@
       
 
         {%- if site.creston_email -%}
-        <li><a class="u-email" href="mailto: {{ site.creston_email | encode_email }}">{{ site.creston_email }}</a></li>
+        <li><a class="u-email" href="mailto: {{ site.creston_email | encode_email }}">{{ site.creston_email | html_encode_email }}</a></li>
         {%- endif -%}
         
         {%- if site.creston_phone -%}

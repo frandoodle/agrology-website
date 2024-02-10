@@ -8,7 +8,7 @@
     <div class="contact_info_header">
       <span style="padding-right: 20px;">Tel: <a class="u-phone" href="tel: {{ site.header_phone }}">{{ site.header_phone }}</a></span>
 
-      Email: <a class="u-email" href="mailto: {{ site.header_email | encode_email }}">{{ site.header_email }}</a>
+      Email: <a class="u-email" href="mailto: {{ site.header_email | encode_email }}">{{ site.header_email | html_encode_email }}</a>
     </div>
     {%- if page_paths -%}
       <nav class="site-nav">
