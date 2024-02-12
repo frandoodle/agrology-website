@@ -7,7 +7,7 @@
       <div class="footer-col footer-col">
         <ul class="contact-list">
           <li class="p-name">
-            Richmond, BC
+            <!-- Richmond, BC -->
           </li>
             {%- if site.richmond_address -%}
               {{ site.richmond_address | escape }}
@@ -15,11 +15,11 @@
           
 
             {%- if site.richmond_email -%}
-            <li><a class="u-email" href="mailto: {{ site.richmond_email | encode_email }}">{{ site.richmond_email | html_encode_email }}</a></li>
+            <li><a class="u-email" href="mailto:{{ site.richmond_email | encode_email }}">{{ site.richmond_email | html_encode_email }}</a></li>
             {%- endif -%}
             
             {%- if site.richmond_phone -%}
-            <a class="u-phone" href="tel: {{ site.richmond_phone }}">{{ site.richmond_phone }}</a>
+            <a class="u-phone" href="tel:{{ site.richmond_phone }}">{{ site.richmond_phone }}</a>
             {%- endif -%}
         </ul>
       </div>
@@ -35,7 +35,7 @@
       
 
         {%- if site.duncan_email -%}
-        <li><a class="u-email" href="mailto: {{ site.duncan_email | encode_email }}">{{ site.duncan_email | html_encode_email }}</a></li>
+        <li><a class="u-email" href="mailto:{{ site.duncan_email | encode_email }}">{{ site.duncan_email | html_encode_email }}</a></li>
         {%- endif -%}
         
         {%- if site.duncan_phone -%}
@@ -49,7 +49,7 @@
       <div class="footer-col footer-col">
         <ul class="contact-list">
           <li class="p-name">
-            Creston, BC
+            <!-- Creston, BC -->
           </li>
           {%- if site.creston_address -%}
           {{ site.creston_address | escape }}
@@ -57,11 +57,11 @@
       
 
         {%- if site.creston_email -%}
-        <li><a class="u-email" href="mailto: {{ site.creston_email | encode_email }}">{{ site.creston_email | html_encode_email }}</a></li>
+        <li><a class="u-email" href="mailto:{{ site.creston_email | encode_email }}">{{ site.creston_email | html_encode_email }}</a></li>
         {%- endif -%}
         
         {%- if site.creston_phone -%}
-        <a class="u-phone" href="tel: {{ site.creston_phone }}">{{ site.creston_phone }}</a>
+        <a class="u-phone" href="tel:{{ site.creston_phone }}">{{ site.creston_phone }}</a>
         {%- endif -%}
         </ul>
       </div>

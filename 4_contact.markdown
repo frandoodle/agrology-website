@@ -19,17 +19,17 @@ image_slider_selector: "small_slider"
 <h3> Richmond</h3>
 {{ site.richmond_address }}
 <br>
-Email: <a class="u-email" href="mailto: {{ site.richmond_email | encode_email }}">{{ site.richmond_email | html_encode_email }}</a>
+Email: <a class="u-email" href="mailto:{{ site.richmond_email | encode_email }}">{{ site.richmond_email | html_encode_email }}</a>
 <br>
-Phone: <a class="u-phone" href="tel: {{ site.richmond_phone }}">{{ site.richmond_phone }}</a>
+Phone: <a class="u-phone" href="tel:{{ site.richmond_phone }}">{{ site.richmond_phone }}</a>
 
 
 <h3> Creston</h3>
 {{ site.creston_address }}
 <br>
-Email: <a class="u-email" href="mailto: {{ site.creston_email | encode_email }}">{{ site.creston_email | html_encode_email }}</a>
+Email: <a class="u-email" href="mailto:{{ site.creston_email | encode_email }}">{{ site.creston_email | html_encode_email }}</a>
 
 <br>
-Phone: <a class="u-phone" href="tel: {{ site.creston_phone }}">{{ site.creston_phone }}</a>
+Phone: <a class="u-phone" href="tel:{{ site.creston_phone }}">{{ site.creston_phone }}</a>
 
 </div>

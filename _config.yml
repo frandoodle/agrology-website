@@ -60,26 +60,26 @@ defaults:
       seo_description_max_words: 200
       last_modified_at: 2024-02-09
 
-baseurl: "/personal-website" # the subpath of your site, e.g. /blog
-url: "https://frandoodle.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://assisi.ca" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
 
 richmond_address: Richmond, BC
-richmond_email: your-email@example.com
-richmond_phone: (111) 111-1111
+richmond_email: richmond@assisi.ca
+richmond_phone: (604) 706-4302
 
 duncan_address: Duncan, BC
-duncan_email: your-email@example.com
-duncan_phone: (111) 111-1111
+duncan_email: duncan@assisi.ca
+duncan_phone: (604) 706-4302
 
 creston_address: Creston, BC
-creston_email: your-email@example.com
-creston_phone: (111) 111-1111
+creston_email: creston@assisi.ca
+creston_phone: (604) 706-4302
 
-header_email: your-email@example.com
-header_phone: (111) 111-1111
+header_email: info@assisi.ca
+header_phone: (604) 706-4302
 
 
 # Build settings
