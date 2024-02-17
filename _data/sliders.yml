@@ -21,8 +21,11 @@
   stopOnBlur: false
   images:
     - src: assets/alfonse-transformed-slice.jpg
+      alt: Photo of garden with ivy growing.
     - src: assets/alps-transformed-slice.jpg
+      alt: Photo of mountaintops.
     - src: assets/tyrol2-transformed-slice.jpg
+      alt: Photo of sheep herder's small house on boreal heath.
     
   settings:
     height: "100"
