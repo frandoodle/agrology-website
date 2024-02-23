@@ -48,6 +48,13 @@
   }
 }
 
+
+@include media-query($on-palm) {
+  .contact_info_header {
+    display: none;
+  }
+}
+
 .site-nav {
   float: right;
   position: absolute;
@@ -109,7 +116,7 @@
       float: right;
       width: 36px;
       height: 36px;
-      z-index: 2;
+      z-index: -99;
       cursor: pointer;
     }
 
@@ -134,7 +141,13 @@
 
     input:checked ~ .trigger {
       display: block;
+      position: relative;
       padding-bottom: 5px;
+      background-color: $background-color;
+    border: 1px solid $grey-color-light;
+    border-top: none;
+    border-radius: 5px;
+    z-index: 99;
     }
 
     .page-link {

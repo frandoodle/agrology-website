@@ -89,7 +89,7 @@
 .iis-has-captions .iis-slide { text-indent: 0; }
 .iis-caption {
 	position: absolute;
-	top: 47%;
+	bottom: 30%;
 	left: 25%;
 	max-width: 90%;
 	z-index: 10;
