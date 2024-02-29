@@ -88,10 +88,10 @@
 /* Captions */
 .iis-has-captions .iis-slide { text-indent: 0; }
 .iis-caption {
-	position: absolute;
-	bottom: 30%;
-	left: 25%;
-	max-width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 	z-index: 10;
 	/* background: #000;
 	background: rgba(0,0,0,0.5);
@@ -106,6 +106,7 @@
 .iis-has-bullet-nav .iis-caption { max-width: 42%; }
 .iis-caption .iis-caption-title { font-weight: bold; }
 .iis-caption .iis-caption-content {
+	text-align: center;
 	font-size: 44px;
 	/* line-height: 1.6em; */
 	color: #eee;
