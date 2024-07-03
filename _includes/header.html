@@ -4,7 +4,7 @@
     {% assign sorted_pages = site.pages | sort:"order" %}
     {%- assign default_paths = sorted_pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ site.url }}"> <img src="{{ site.baseurl }}assets/logoname.png" alt="Assisi Agrology Logo" style="display: inline-block" height="100px"></a>
+    <a class="site-title" rel="author" href="{{ site.url }}"> <img src="{{ site.baseurl }}{% link assets/logoname.png %}" alt="Assisi Agrology Logo" style="display: inline-block" height="100px"></a>
     <div class="contact_info_header">
       <span style="padding-right: 20px;">Tel: <a class="u-phone" href="tel: {{ site.header_phone }}">{{ site.header_phone }}</a></span>
 
