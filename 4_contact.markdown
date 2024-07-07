@@ -6,6 +6,8 @@ permalink: /contact/
 
 image_sliders: [small_slider]
 image_slider_selector: "small_slider"
+
+contains_map: true
 ---
 
   Have any questions? Please don't hesitate to send us a message. We'll reply in 1 to 2 business days.

@@ -40,22 +40,23 @@ outlinepoints <- tribble(
   49.0095972,-123.0969178,
   49.006234,-122.2791334,
   49.0028795,-116.5208078,
-  49.4867481,-115.8372775
+  49.4867481,-115.8372775,
+  48.7622886,-115.8506576,
+  48.8961208,-123.0229461,
+  49.4489485,-115.1114634
 )
 outline <- outlinepoints[chull(outlinepoints$lng, outlinepoints$lat),] %>%
   st_as_sf(coords = c("lng", "lat")) %>%
   summarise(geometry = st_combine(geometry)) %>%
-st_cast("POLYGON") %>%
+  st_cast("POLYGON") %>%
   smoothr::smooth(method = "ksmooth", smoothness = 0.5, n= 50L) %>%
   st_make_valid()
 usa <- map_data('usa') %>%
   st_as_sf(coords = c("long", "lat")) %>%
   summarise(geometry = st_combine(geometry)) %>%
-st_cast("POLYGON") %>%
+  st_cast("POLYGON") %>%
   st_make_valid()
 outline_clipped <- st_difference(outline,usa)
-plot(outline_clipped)
-
 
 richmondContent <- paste(sep = "<br/>",
   "<b>Assisi Agrology</b>",
@@ -93,12 +94,21 @@ m <- leaflet() %>%
                                          clickable=TRUE,
 
       style = labelStyle)) %>%
-  addPolygons(data = outline, lng = ~lng, lat = ~lat,
+  addPolygons(data = outline_clipped,
     fill = TRUE, weight = 5, color = "#FFFFCC",opacity=0.7, group = "Outline")
 m # Print the map
 saveWidget(m, file = "maps/locations.html",selfcontained = FALSE)
 
 ```
 
+Make regulatory map:
+```{r}
+
+
+m <- leaflet() %>%
+  addTiles()
+m # Print the map
+saveWidget(m, file = "maps/locations.html",selfcontained = FALSE)
+```
 
 

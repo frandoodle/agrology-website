@@ -10,5 +10,8 @@
   {%- endif -%}
   {%- seo -%}
 
-  {%- include head_leaflet.html -%}
+  {%- if page.contains_map -%}
+    {%- include head_leaflet.html -%}
+    <script src="https://cdn.jsdelivr.net/leaflet.locatecontrol/0.60.0/L.Control.Locate.min.js"></script>
+  {%- endif -%}
 </head>
