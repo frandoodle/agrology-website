@@ -1,0 +1,155 @@
+
+---
+title: test
+leafletmap: true
+always_allow_html: yes
+---
+
+
+```{r}
+library(leaflet)
+library(htmlwidgets)
+library(tibble)
+library(sf)
+library(mapdata)
+library(ggplot2)
+library(dplyr)
+```
+
+Make contact map:
+```{r}
+outlinepoints <- tribble(
+  ~lat,~lng,
+  49.1086741,-116.5567701,
+  49.6813195,-116.8980499,
+  49.9103983,-116.9861505,
+  50.0333452,-117.4873509,
+  50.2635593,-118.0436133,
+  51.008844,-118.3425806,
+  50.736647,-121.4810786,
+  50.8839244,-121.8966118,
+  50.1030895,-123.5923728,
+  50.009887,-125.891926,
+  49.5570634,-125.6284382,
+  49.2455737,-124.9547963,
+  48.8243788,-124.3535536,
+  48.5529987,-124.496119,
+  48.4052154,-123.9856033,
+  48.4098275,-123.3591029,
+  48.6515556,-123.4775016,
+  49.0095972,-123.0969178,
+  49.006234,-122.2791334,
+  49.0028795,-116.5208078,
+  49.4867481,-115.8372775,
+  48.7622886,-115.8506576,
+  48.8961208,-123.0229461,
+  49.4489485,-115.1114634
+)
+outline <- outlinepoints[chull(outlinepoints$lng, outlinepoints$lat),] %>%
+  st_as_sf(coords = c("lng", "lat")) %>%
+  summarise(geometry = st_combine(geometry)) %>%
+  st_cast("POLYGON") %>%
+  smoothr::smooth(method = "ksmooth", smoothness = 0.5, n= 50L) %>%
+  st_make_valid()
+usa <- map_data('usa') %>%
+  st_as_sf(coords = c("long", "lat")) %>%
+  summarise(geometry = st_combine(geometry)) %>%
+  st_cast("POLYGON") %>%
+  st_make_valid()
+outline_clipped <- st_difference(outline,usa)
+
+richmondContent <- paste(sep = "<br/>",
+  "<b>Assisi Agrology</b>",
+  "Phone: (604) 706-4302",
+  "Email: <a href='mailto:{{ site.richmond_email | encode_email }}'>richmond@assisi.ca</a>"
+)
+crestonContent <- paste(sep = "<br/>",
+  "<b>Assisi Agrology</b>",
+  "Phone: (604) 706-4302",
+  "Email: <a href='mailto:{{ site.creston_email | encode_email }}'>creston@assisi.ca</a>"
+)
+labelStyle <- list(
+        "color" = "black",
+        "font-size" = "14px",
+        "box-shadow" = "3px 3px rgba(0,0,0,0.25)"
+      )
+
+m <- leaflet() %>%
+  addTiles() %>% # Add default OpenStreetMap map tiles 
+  addMarkers(lat=49.1602575,lng=-123.1179759,
+             popup=richmondContent,
+             label="Richmond, BC",
+             labelOptions = labelOptions(noHide = TRUE,
+                                         direction = "bottom",
+                                         textOnly = FALSE,
+                                         clickable=TRUE,
+
+      style = labelStyle)) %>%
+  addMarkers(lat=49.1089344,lng=-116.5566951,
+             popup=crestonContent,
+             label="Creston, BC",
+             labelOptions = labelOptions(noHide = TRUE,
+                                         direction = "bottom",
+                                         textOnly = FALSE,
+                                         clickable=TRUE,
+
+      style = labelStyle)) %>%
+  addPolygons(data = outline_clipped,
+    fill = TRUE, weight = 5, color = "#FFFFCC",opacity=0.7, group = "Outline")
+m # Print the map
+saveWidget(m, file = "locations.html",selfcontained = FALSE)
+
+```
+
+Make regulatory map data:
+```{r}
+addName <- function(firstline, filename) {
+contents <- readLines(filename)
+newcontents=c(firstline,contents)
+writeLines(newcontents, filename)
+}
+
+phosphorus_aquifer <- st_read("data/aquifer/Deliverable_Nov2018/ScheduleA.shp") %>%
+  mutate(PHOSPHORUS = 1) %>%
+  st_transform(crs = st_crs("EPSG:4326")) %>%
+  sf::st_write(dsn = "regulatory_files/phosphorus_aquifer.geojson", append=FALSE, delete_dsn = TRUE)
+addName("var aquiferPhosphorusData = ", "regulatory_files/phosphorus_aquifer.geojson")
+
+vulnerable_aquifer <- st_read("data/aquifer/Deliverable_Nov2018/ScheduleB.shp") %>%
+  mutate(VULNERABLE = 1) %>%
+  st_transform(crs = st_crs("EPSG:4326")) %>%
+  sf::st_write(dsn = "regulatory_files/vulnerable_aquifer.geojson", append=FALSE, delete_dsn = TRUE)
+addName("var aquiferVulnerableData = ", "regulatory_files/vulnerable_aquifer.geojson")
+
+municipalities <- st_read("data/municipalities/ABMS_LGL_ADMIN_AREAS_SVW/ABMS_LAA_polygon.shp") %>%
+  st_transform(crs = st_crs("EPSG:4326")) %>%
+  filter(AA_TYPE %in% c("Municipality", "Regional District")) %>%
+  sf::st_write(dsn = "regulatory_files/municipalities.geojson", append=FALSE, delete_dsn = TRUE)
+  addName("var municipalityData = ", "regulatory_files/municipalities.geojson")
+
+  alr <- st_read("data/alr/OATS_ALR_POLYS/TSLRPLS_polygon.shp") %>%
+  st_transform(crs = st_crs("EPSG:4326")) %>%
+  mutate(ALR = 1) %>%
+  sf::st_write(dsn = "regulatory_files/alr.geojson", append=FALSE, delete_dsn = TRUE)
+  addName("var alrData = ", "regulatory_files/alr.geojson")
+  
+  fwa_path <- "data/FWA_STREAM_NETWORKS_SP/FWA_STREAM_NETWORKS_SP.gdb"
+  fwa_gdb<-st_layers(fwa_path)
+  fwa_list_of_features<-purrr::map(fwa_gdb$name,~st_read(dsn=fwa_path,layer=.))
+  fwa_single_sf <- dplyr::bind_rows(fwa_list_of_features)
+  fwa_streams <- st_read("data/FWA_STREAM_NETWORKS_SP/FWA_STREAM_NETWORKS_SP.gdb") %>%
+    st_transform(crs = st_crs("EPSG:4326"))
+  fwa_streams_buffer <- fwa_streams %>%
+    st_buffer(dist = 30)
+  fwa_streams_buffer_dissolve <- fwa_streams_buffer %>%
+    ungroup() %>%
+    summarise()
+  fwa_streams_buffer_dissolve_simplify <- fwa_streams_buffer_dissolve %>%
+    st_make_valid() %>%
+    st_simplify(dTolerance = 20) %>%
+    sf::st_write(dsn = "regulatory_files/fwa_streams_buffer.geojson", append=FALSE, delete_dsn = TRUE, delete_layer = TRUE)
+    addName("var fwaStreamsData = ", "regulatory_files/fwa_streams_buffer.geojson")
+
+```
+
+

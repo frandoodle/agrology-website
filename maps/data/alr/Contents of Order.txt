@@ -1,0 +1,14 @@
+------------------
+Order Details
+-----------------
+Order ID: 2383015
+Date: 20240707
+
+----------------------
+Feature Types
+-----------------------
+ - ALC ALR Polygons in directory TSLRPLS
+
+----------------------------
+Packaged Products
+----------------------------

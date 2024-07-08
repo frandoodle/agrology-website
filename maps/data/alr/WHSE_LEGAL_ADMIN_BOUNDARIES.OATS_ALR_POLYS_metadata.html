@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+   <head>
+      <title>Metadata</title>
+      <meta charset="UTF-8">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12" style="padding:10px;border: 1px solid black" >
+                     <img class="img-fluid d-block mx-auto" src="https://catalogue.data.gov.bc.ca/img/bc_mark.699f8f93.png" alt="B.C. Government Logo" style="height:65px;background-color:#003366">
+                     <H2 style="color:rgb(2,47,248)" class="text-center">ALC ALR Polygons</H2>
+                     <table class="table table-condensed">
+                        <thead>
+                           <tr>
+                              <th>Title</th>
+                              <th>Purpose</th>
+                              <th>Description</th>
+                              <th>Last Modified Date</th>
+                              <th>BCDC URL</th>
+                              <th>BCDC Type</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>ALC ALR Polygons</td>
+                              <td>Represents the BC Agricultural Land Reserve (ALR).</td>
+                              <td>The spatial representation for the boundary of an Agricultural Land Reserve (ALR), which is a parcel of land, based on soil and climate, deemed necessary to be maintained for agricultural use. The data gets updated four times a year, at the end of: Jan, Apr, Jul and Oct. It is also available on the ALC's website: https://www.alc.gov.bc.ca/alr-maps/
+               History: ALR hard copy base (1:50000) and large scale constituent maps. Compilation from hard copy maps rectified to standard provincial base digital data (TRIM, CDMS, ICI, PMBC).
+               Resolution: Variable, determined for feature from base source.
+               Registry: Land Reserve Commission, 201-4940 Canada Way, Burnaby BC, V5G-4K6, (604)660-7000</td>
+                              <td>2024-07-05T08:30:20</td>
+                              <td><a href="https://catalogue.data.gov.bc.ca/dataset/92e17599-ac8a-47c8-877c-107768cb373c">https://catalogue.data.gov.bc.ca/dataset/92e17599-ac8a-47c8-877c-107768cb373c</a></td>
+                              <td>Geographic</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table class="table table-condensed">
+                        <thead>
+                           <tr>
+                              <th>Resource Location</th>
+                              <th>Object Name</th>
+                              <th>Short Name</th>
+                              <th>Object Comments</th>
+                              <th>Projection</th>
+                              <th>License Title</th>
+                              <th>License URL</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>Bc Geographic Warehouse</td>
+                              <td>WHSE_LEGAL_ADMIN_BOUNDARIES. OATS_ALR_POLYS</td>
+                              <td>TSLRPLS</td>
+                              <td>The spatial representation for the boundary of an Agricultural Land Reserve (ALR), which is a parcel of land, based on soil and climate, deemed necessary to be maintained for agricultural use. The ALR digital data is not considered the official representation of the ALR.</td>
+                              <td>epsg3005</td>
+                              <td>Open Government Licence - British Columbia</td>
+                              <td><a href="https://www2.gov.bc.ca/gov/content?id=A519A56BC2BF44E4A008B33FCF527F61">License Url</a></td>
+                           </tr>
+                        </tbody>
+                     </table>
+               <hr style="border-width:4px ">
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12" style="padding:10px;border: 1px solid black" >
+                     <H5 style="color:rgb(2,47,248)" class="text-left">Column Details</H5>
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th>Column Name</th>
+                              <th>Short Name</th>
+                              <th>Data Type</th>
+                              <th>Data Precision</th>
+                              <th>Column Comments</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>ALR_POLY_ID</td>
+                              <td>LRPLD</td>
+                              <td>NUMBER</td>
+                              <td>20</td>
+                              <td>System generated sequence number to uniquely identify an ALR POLY</td>
+                           </tr>
+                           <tr>
+                              <td>STATUS</td>
+                              <td>STATUS</td>
+                              <td>VARCHAR2</td>
+                              <td>6</td>
+                              <td>STATUS indicates whether an area of land is part of the active Agricultural Land Reserve.  The common value will be "active".</td>
+                           </tr>
+                           <tr>
+                              <td>FEATURE_CODE</td>
+                              <td>FTRCD</td>
+                              <td>VARCHAR2</td>
+                              <td>10</td>
+                              <td>The FEATURE CODE is most importantly a means of linking a feature to its name and definition. For example, the code GB15300120 on a digital geographic feature links it to the name " Lake - Dry" with the definition "A lake bed from which all water has drained or evaporated." The feature code does NOT mark when it was digitized, what dataset it belongs to, how accurate it is, what it should look like when plotted, or who is responsible for updating it. It only says what it represents in the real world. It also doesn't even matter how the lake is represented. If it is a very small lake, it may be stored as a point feature. If it is large enough to have a shape at the scale of data capture, it may be stored as an outline, or a closed polygon. The same feature code still links it to the same definition.</td>
+                           </tr>
+                           <tr>
+                              <td>GEOMETRY</td>
+                              <td>GEOMETRY</td>
+                              <td>SDO_GEOMETRY</td>
+                              <td>1</td>
+                              <td>GEOMETRY is the column used to reference the spatial coordinates defining the feature. </td>
+                           </tr>
+                           <tr>
+                              <td>OBJECTID</td>
+                              <td>OBJECTID</td>
+                              <td>NUMBER</td>
+                              <td>38</td>
+                              <td>OBJECTID is a required attribute of feature classes and object classes in a geodatabase. </td>
+                           </tr>
+                           <tr>
+                              <td>SE_ANNO_CAD_DATA</td>
+                              <td>None</td>
+                              <td>BLOB</td>
+                              <td>4000</td>
+                              <td>SE_ANNO_CAD_DATA is a binary column used by spatial tools to store annotation, curve features and CAD data when using the SDO_GEOMETRY storage data type. </td>
+                           </tr>
+                           <tr>
+                              <td>FEATURE_AREA_SQM</td>
+                              <td>AREA_SQM</td>
+                              <td>NUMBER</td>
+                              <td>19</td>
+                              <td>FEATURE_AREA_SQM is the system calculated area of a two-dimensional polygon in square meters</td>
+                           </tr>
+                           <tr>
+                              <td>FEATURE_LENGTH_M</td>
+                              <td>FEAT_LEN</td>
+                              <td>NUMBER</td>
+                              <td>19</td>
+                              <td>FEATURE_LENGTH_M is the system calculated length or perimeter of a geometry in meters</td>
+                           </tr>
+                        </tbody>
+                     </table>
+               <hr style="border-width:5px ">
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
+

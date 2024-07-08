@@ -1,0 +1,14 @@
+------------------
+Order Details
+-----------------
+Order ID: 2382928
+Date: 20240707
+
+----------------------
+Feature Types
+-----------------------
+ - Legally Defined Administrative Areas of BC in directory ABMS_LAA
+
+----------------------------
+Packaged Products
+----------------------------

@@ -1,0 +1,75 @@
+[
+	{
+		"title" : "ALC ALR Polygons",
+		"name" : "alc-alr-polygons",
+		"bcdc_data_resource_url" : "https://catalogue.data.gov.bc.ca/dataset/92e17599-ac8a-47c8-877c-107768cb373c",
+		"description" : "The spatial representation for the boundary of an Agricultural Land Reserve (ALR), which is a parcel of land, based on soil and climate, deemed necessary to be maintained for agricultural use. The data gets updated four times a year, at the end of: Jan, Apr, Jul and Oct. It is also available on the ALC's website: https://www.alc.gov.bc.ca/alr-maps/\nHistory: ALR hard copy base (1:50000) and large scale constituent maps. Compilation from hard copy maps rectified to standard provincial base digital data (TRIM, CDMS, ICI, PMBC).\nResolution: Variable, determined for feature from base source.\nRegistry: Land Reserve Commission, 201-4940 Canada Way, Burnaby BC, V5G-4K6, (604)660-7000",
+		"purpose" : "Represents the BC Agricultural Land Reserve (ALR).",
+		"bcdc_type" : "Geographic",
+		"last_modified" : "2024-07-05T08:30:20",
+		"resource_storage_location" : "Bc Geographic Warehouse",
+		"object_name" : "WHSE_LEGAL_ADMIN_BOUNDARIES.OATS_ALR_POLYS",
+		"object_short_name" : "TSLRPLS",
+		"object_table_comments" : "The spatial representation for the boundary of an Agricultural Land Reserve (ALR), which is a parcel of land, based on soil and climate, deemed necessary to be maintained for agricultural use. The ALR digital data is not considered the official representation of the ALR.",
+		"projection_name" : "epsg3005",
+		"license_title" : "Open Government Licence - British Columbia",
+		"license_url" : "https://www2.gov.bc.ca/gov/content?id=A519A56BC2BF44E4A008B33FCF527F61",
+		"details" : [
+			{
+				"column_comments" : "System generated sequence number to uniquely identify an ALR POLY",
+				"data_precision" : "20",
+				"short_name" : "LRPLD",
+				"column_name" : "ALR_POLY_ID",
+				"data_type" : "NUMBER"
+			},
+			{
+				"short_name" : "STATUS",
+				"data_type" : "VARCHAR2",
+				"column_name" : "STATUS",
+				"column_comments" : "STATUS indicates whether an area of land is part of the active Agricultural Land Reserve.  The common value will be \"active\".",
+				"data_precision" : "6"
+			},
+			{
+				"data_type" : "VARCHAR2",
+				"column_name" : "FEATURE_CODE",
+				"short_name" : "FTRCD",
+				"column_comments" : "The FEATURE CODE is most importantly a means of linking a feature to its name and definition. For example, the code GB15300120 on a digital geographic feature links it to the name \" Lake - Dry\" with the definition \"A lake bed from which all water has drained or evaporated.\" The feature code does NOT mark when it was digitized, what dataset it belongs to, how accurate it is, what it should look like when plotted, or who is responsible for updating it. It only says what it represents in the real world. It also doesn't even matter how the lake is represented. If it is a very small lake, it may be stored as a point feature. If it is large enough to have a shape at the scale of data capture, it may be stored as an outline, or a closed polygon. The same feature code still links it to the same definition.",
+				"data_precision" : "10"
+			},
+			{
+				"data_type" : "SDO_GEOMETRY",
+				"column_name" : "GEOMETRY",
+				"short_name" : "GEOMETRY",
+				"column_comments" : "GEOMETRY is the column used to reference the spatial coordinates defining the feature. ",
+				"data_precision" : "1"
+			},
+			{
+				"data_precision" : "38",
+				"column_name" : "OBJECTID",
+				"data_type" : "NUMBER",
+				"short_name" : "OBJECTID",
+				"column_comments" : "OBJECTID is a required attribute of feature classes and object classes in a geodatabase. "
+			},
+			{
+				"data_precision" : "4000",
+				"data_type" : "BLOB",
+				"column_comments" : "SE_ANNO_CAD_DATA is a binary column used by spatial tools to store annotation, curve features and CAD data when using the SDO_GEOMETRY storage data type. ",
+				"column_name" : "SE_ANNO_CAD_DATA"
+			},
+			{
+				"short_name" : "AREA_SQM",
+				"data_precision" : "19",
+				"column_comments" : "FEATURE_AREA_SQM is the system calculated area of a two-dimensional polygon in square meters",
+				"column_name" : "FEATURE_AREA_SQM",
+				"data_type" : "NUMBER"
+			},
+			{
+				"data_type" : "NUMBER",
+				"column_name" : "FEATURE_LENGTH_M",
+				"column_comments" : "FEATURE_LENGTH_M is the system calculated length or perimeter of a geometry in meters",
+				"short_name" : "FEAT_LEN",
+				"data_precision" : "19"
+			}
+		]
+	}
+]
