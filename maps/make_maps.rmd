@@ -137,10 +137,14 @@ municipalities <- st_read("data/municipalities/ABMS_LGL_ADMIN_AREAS_SVW/ABMS_LAA
   fwa_gdb<-st_layers(fwa_path)
   fwa_list_of_features<-purrr::map(fwa_gdb$name,~st_read(dsn=fwa_path,layer=.))
   fwa_single_sf <- dplyr::bind_rows(fwa_list_of_features)
-  fwa_streams <- st_read("data/FWA_STREAM_NETWORKS_SP/FWA_STREAM_NETWORKS_SP.gdb") %>%
+  fwa_streams <- fwa_single_sf %>%
     st_transform(crs = st_crs("EPSG:4326"))
-  fwa_streams_buffer <- fwa_streams %>%
-    st_buffer(dist = 30)
+  fwa_streams_simple <- fwa_streams %>%
+    st_simplify(dTolerance = 30)
+  saveRDS(fwa_streams_simple, file="fwa_streams_simple.rds")
+  fwa_streams_buffer <- fwa_streams_simple %>%
+    st_buffer(dist = 60)
+  saveRDS(fwa_streams_buffer, file="fwa_streams_buffer.rds")
   fwa_streams_buffer_dissolve <- fwa_streams_buffer %>%
     ungroup() %>%
     summarise()
