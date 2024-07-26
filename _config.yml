@@ -74,18 +74,18 @@ url: "https://assisi.ca" # the base hostname & protocol for your site, e.g. http
 
 richmond_address: Richmond, BC
 richmond_email: richmond@assisi.ca
-richmond_phone: (604) 706-4302
+richmond_phone: (604) 674-6588
 
 duncan_address: Duncan, BC
 duncan_email: duncan@assisi.ca
-duncan_phone: (604) 706-4302
+duncan_phone: (604) 674-6588
 
 creston_address: Creston, BC
 creston_email: creston@assisi.ca
-creston_phone: (604) 706-4302
+creston_phone: (604) 674-6588
 
 header_email: info@assisi.ca
-header_phone: (604) 706-4302
+header_phone: (604) 674-6588
 
 
 # Build settings
