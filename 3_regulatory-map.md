@@ -10,6 +10,7 @@ image_sliders: [small_slider]
 image_slider_selector: "small_slider"
 
 contains_map: true
+contains_map_regulatory: true
 ---
 <div class="map-content" style="display:flex; align-items:center; flex-direction:column;">
 <div class="input-group">
