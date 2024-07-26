@@ -1,6 +1,6 @@
 ---
 layout: page
-# menu: hidden
+menu: hidden
 # menuservices: services
 order: 6
 title: Property Regulations Map
